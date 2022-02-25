@@ -1,0 +1,74 @@
+body {
+    background: #96bad5;
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+}
+
+#naslov{
+    padding-left: 100px;
+    text-align: center;
+}
+
+#forma1 {
+    margin: 50px;
+    width: 100%;
+}
+#forma2 {
+    margin: 50px;
+    width: 100%;
+}
+
+#lbin label {
+    width: 100px;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    text-align: left;
+}
+
+#lbin {
+    margin: 10px;
+}
+
+select, textarea {
+    width: 250px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    background: #0066A2;
+    color: white;
+    height: 40px;
+    width: 375px;
+}
+
+@media screen and (max-width: 499px) {
+    #lbin label {
+        display: block;
+        text-align: left;
+    }
+
+    #lbin {
+        margin-left: 0; 
+    }
+
+    body {
+        text-align: left;
+    }
+
+    select, textarea {
+        width: 150px;
+    }
+
+    input[type=submit] {
+        width: 150px;
+    }
+}
+

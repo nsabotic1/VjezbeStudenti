@@ -1,0 +1,17 @@
+Postovani,
+
+vidjet cete da spirala 2 ima vise commita.
+Razlog sto je tako je jer sam u prvom putu pushala i zadatak4.html
+iako sam zeljela pokusati uraditi jos testova (u zadatak4.js), pa citav
+4. zadatak zajedno pushati na bitbucket.
+
+Medjutim, kako vec imam folder spirala2, dodatni push mi nije bio dozvoljen, tj.
+izbacilo je gresku.
+
+Zato sam obrisala sve iz foldera spirala2 i dodala ponovo sve fajlove
+koji su obrisani, te dodatno zadatak4.html,
+testovi.js i neki svoj pokusaj testa u fajlu zadatak4.js.
+
+Lijep pozdrav!
+
+

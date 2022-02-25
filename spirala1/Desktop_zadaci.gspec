@@ -1,0 +1,67 @@
+@objects
+	body body
+	naslov #naslov
+	forma1 #forma1
+	forma2 #forma2
+	lbin #lbin
+	zadaci #zadaci
+	vjezbe #vjezbe
+	textarea textarea
+	v1 #v1
+	z1 #z1
+= Width section =
+	naslov:
+		width 98 to 100 % of body/width
+	forma1:
+		width 98 to 100 % of body/width
+	forma2:
+		width 98 to 100 % of body/width
+
+= Height section =
+	textarea:
+		height 107px
+
+= Inside section =
+	lbin:
+		inside forma1
+	zadaci:
+		inside forma1
+	vjezbe:
+		inside forma1
+= Left of section =
+	v1:
+		left-of vjezbe
+= Right of section =
+	zadaci:
+		right-of z1
+= Above section =
+	naslov:
+		above forma1
+	forma1:
+		above forma2
+	v1:
+		above z1
+
+= Below section =
+	forma1:
+		below naslov
+	forma2:
+		below forma1
+	z1:
+		below v1
+= Visible section =
+	naslov:
+		visible
+	forma1:
+		visible
+	forma2:
+		visible
+	lbin:
+		visible
+	zadaci:
+		visible
+= Inside partly section =
+	naslov:
+		inside partly body ~0px left, ~0px top
+	forma1:
+		inside partly body ~50px left, ~88px top

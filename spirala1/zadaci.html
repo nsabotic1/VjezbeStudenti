@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zadaci</title>
+    <link rel="stylesheet" href="zadaci.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1 id="naslov">Komentar na rješenje zadatka</h1>
+
+    <div>
+        <form id="forma1">
+            <div id="lbin">
+                <label id="v1">Odabir vježbe:</label> 
+                <select name="vjezbe" id="vjezbe">
+                    <option value="vjezba1">Vježba 1</option>
+                    <option value="vjezba2">Vježba 2</option>
+                    <option value="vjezba3">Vježba 3</option>
+                    <option value="vjezba4">Vježba 4</option>
+                    <option value="vjezba5">Vježba 5</option>
+                    <option value="vjezba6">Vježba 6</option>
+                </select>
+            </div>
+
+            <div id="lbin">
+                <label id="z1">Odabir zadatka:</label> 
+                <select name="zadaci" id="zadaci">
+                    <option value="zadatak1">Zadatak 1</option>
+                    <option value="zadatak2">Zadatak 2</option>
+                    <option value="zadatak3">Zadatak 3</option>
+                    <option value="zadatak4">Zadatak 4</option>
+                </select>
+            </div>
+
+            <div id="lbin"><label>Komentar:</label> <textarea name="komentar">Unesite komentar...</textarea></div>
+            <input type="submit" name="unosKomentara" value="Pošalji">
+        </form>
+
+        <form id="forma2">
+            <div id="lbin"><label>Errors log: </label> <textarea name="komentar">Unesite errors log...</textarea></div>
+            <div id="lbin"><label>Bez grešaka: </label> <input type="checkbox" id="bezGresaka"></div>
+            <input type="submit" name="unosRezultata" value="Dodaj rezultate testa">
+        </form>
+    </div>
+
+</body>
+
+</html>

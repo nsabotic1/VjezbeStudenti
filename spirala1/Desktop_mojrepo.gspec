@@ -1,0 +1,71 @@
+@objects
+	body body
+	naslov #naslov
+	forma #forma
+	lbin #lbin
+	input input[type='submit']
+	url #url
+	branch #branch
+	l1 #l1
+	l2 #l2
+	akademska #akademska
+= Width section =
+	naslov:
+		width 98 to 100 % of body/width
+	forma:
+		width 98 to 100 % of body/width
+
+= Height section =
+	input:
+		height 40px
+
+= Inside section =
+	naslov:
+		inside body
+	lbin:
+		inside forma
+	input:
+		inside forma
+	url:
+		inside forma
+	branch:
+		inside forma
+= Left of section =
+	l1:
+		left-of url
+	l2:
+		left-of akademska
+= Right of section =
+	url:
+		right-of l1
+	akademska:
+		right-of l2
+= Above section =
+	naslov:
+		above forma
+	naslov:
+		above lbin
+	naslov:
+		above input
+
+= Below section =
+	forma:
+		below naslov
+	lbin:
+		below naslov
+	input:
+		below naslov
+= Visible section =
+	naslov:
+		visible
+	forma:
+		visible
+	lbin:
+		visible
+	input:
+		visible
+= Inside partly section =
+	naslov:
+		inside partly body ~0px left, ~0px top
+	forma:
+		inside partly body ~50px left, ~88px top

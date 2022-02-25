@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #edb1f1;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+a {
+    padding-right: 20px;
+}
+ p {
+    background-color: #8ef6e4;
+    margin: 20px;
+    width: fit-content;
+}
+#grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+        "meni meni"
+        "studenti info";
+}
+
+#meni {
+    grid-area: meni;
+    border-bottom: #242424 1px solid;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    overflow: auto;
+}
+
+
+#studenti {
+    grid-area: studenti;
+    border-right: #242424 1px solid;
+    border-top: #242424 1px solid;
+    text-align: center; 
+    overflow: auto;
+}
+
+#grid_lista {  
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+
+#grupe {
+    grid-area: info;
+    border-left: #242424 1px solid;
+    border-top: #242424 1px solid; 
+    text-align: center; 
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+table {
+    background-color: #5dacbd;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-collapse: collapse;
+    border-style: double;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 799px) and (min-width:500px) {
+    #grid {
+        grid-template-areas: 
+            "meni meni"
+            "info info"
+            "studenti studenti";    
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    #grid {
+        grid-template-areas: 
+            "meni meni"
+            "info info"
+            "studenti studenti";
+    }
+    
+     #meni {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        gap: 10px;
+        padding-left: 0;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    #grupe tr :not(:first-child) {
+       display: none; 
+    }
+}
